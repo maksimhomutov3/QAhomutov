@@ -1,0 +1,224 @@
+ mkdir QAtest
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол
+$ cd QAtest
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest
+$ mkdir test1
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest
+$ mkdir test2
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest
+$ mkdir test3
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest
+$ cd test1
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test1
+$ > file1.txt
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test1
+$ >file2.txt
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test1
+$ > file3.txt
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test1
+$ > dod1.json
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test1
+$ > dod2.json
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test1
+$ mkdir test1.1
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test1
+$ mkdir test1.2
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test1
+$ mkdir test1.3
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test1
+$ ls -la
+total 4
+drwxr-xr-x 1 Legion 197609 0 Jul  1 14:57 ./
+drwxr-xr-x 1 Legion 197609 0 Jul  1 14:54 ../
+-rw-r--r-- 1 Legion 197609 0 Jul  1 14:56 dod1.json
+-rw-r--r-- 1 Legion 197609 0 Jul  1 14:56 dod2.json
+-rw-r--r-- 1 Legion 197609 0 Jul  1 14:55 file1.txt
+-rw-r--r-- 1 Legion 197609 0 Jul  1 14:55 file2.txt
+-rw-r--r-- 1 Legion 197609 0 Jul  1 14:55 file3.txt
+drwxr-xr-x 1 Legion 197609 0 Jul  1 14:56 test1.1/
+drwxr-xr-x 1 Legion 197609 0 Jul  1 14:56 test1.2/
+drwxr-xr-x 1 Legion 197609 0 Jul  1 14:57 test1.3/
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test1
+$ ls
+dod1.json  dod2.json  file1.txt  file2.txt  file3.txt  test1.1/  test1.2/  test1.3/
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test1
+$ vim file1.txt
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test1
+$ cd ..
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest
+$ mv /d/"Рабочий стол"/QAtest/test1/file1.txt /d/"Рабочий стол"/QAtest/test2/file1.txt
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest
+$ mv /d/"Рабочий стол"/QAtest/test1/file2.txt /d/"Рабочий стол"/QAtest/test2/file2.txt
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest
+$ cd test1
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test1
+$ ls
+dod1.json  dod2.json  file3.txt  test1.1/  test1.2/  test1.3/
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test1
+$ cp dod1.json test2
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test1
+$ cd ..
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest
+$ cp file3.txt test2
+cp: cannot stat 'file3.txt': No such file or directory
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest
+$ cp file3.txt test2/
+cp: cannot stat 'file3.txt': No such file or directory
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest
+$ cd test1
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test1
+$ cp file3.txt test2
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test1
+$ cp file3.txt test2/
+cp: cannot create regular file 'test2/': Not a directory
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test1
+$ cd ..
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest
+$ cp file1.txt test3/
+cp: cannot stat 'file1.txt': No such file or directory
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest
+$ cp -v file1.txt test3/
+cp: cannot stat 'file1.txt': No such file or directory
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest
+$ cd test1
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test1
+$ cp -v file3.txt test1.1/
+'file3.txt' -> 'test1.1/file3.txt'
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test1
+$ cp -v dod1.json test1.1/
+'dod1.json' -> 'test1.1/dod1.json'
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test1
+$ cd test1.1
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test1/test1.1
+$ ls
+dod1.json  file3.txt
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test1/test1.1
+$ cd ..
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test1
+$ cd ..
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest
+$ find / -name file
+find: ‘/tmp/WinSAT’: Permission denied
+/usr/share/licenses/file
+/usr/share/perl5/vendor_perl/URI/file
+find d:/file.txt
+
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest
+$ find d:/file.txt
+find: ‘d:/file.txt’: No such file or directory
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest
+$ cd test1
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test1
+$ find -name file1.txt
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test1
+$ cd ..
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest
+$ find . -name file1
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest
+$ find . -name file1.txt
+./test2/file1.txt
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest
+$ ls
+test1/  test2/  test3/
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest
+$ grep the file1.txt
+grep: file1.txt: No such file or directory
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest
+$ cd test2
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test2
+$ grep the file1.txt
+Up in the sky,
+Over the mountains,
+Over the sea,
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test2
+$ cat file1.txt
+Little silver airplane,
+Up in the sky,
+Where are you going to
+Flying so high?
+Over the mountains,
+Over the sea,
+Little silver airplane,
+Please take me.
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test2
+$ cat -n file1.txt
+     1  Little silver airplane,
+     2  Up in the sky,
+     3  Where are you going to
+     4  Flying so high?
+     5  Over the mountains,
+     6  Over the sea,
+     7  Little silver airplane,
+     8  Please take me.
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test2
+$ cat file1.txt | head -n1 | tail -n1
+Little silver airplane,
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test2
+$  cat file1.txt | head -n1 | tail -n3
+Little silver airplane,
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test2
+$  cat file1.txt | head -n8 | tail -n1
+Please take me.
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test2
+$ less file1.txt
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test2
+$ date
+Fri Jul  2 01:42:22 RTZ 2021
+
+Legion@LAPTOP-2KKQINN4 MINGW64 /d/Рабочий стол/QAtest/test2
