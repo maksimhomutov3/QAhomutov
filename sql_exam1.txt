@@ -1,0 +1,9 @@
+1)select * from users
+
+2)select distinct (align)
+from heroes
+
+3)select distinct (hair)
+from heroes
+limit 10
+
