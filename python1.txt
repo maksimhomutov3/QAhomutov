@@ -16,3 +16,10 @@ for e in range(int(number)):
 name = "Max"
 height = 2
 wight = 95
+
+bmi = wight / (height**2)
+print("Индекс массы тела равен : " + str(bmi))
+if bmi < 25:
+    print("У " + name +" нет лишнего веса")
+else:
+    print("У " + name + " есть лишний вес")
